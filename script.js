@@ -1,0 +1,3 @@
+function searchWeather
+function getForcast
+function getUVIndex
