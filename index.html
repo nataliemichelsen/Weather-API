@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <!-- insert weather API here -->
-    <link href=""/>
+    <link href="" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -16,9 +16,32 @@
     <header class="header">
         <h1 class="title">Check the Weather</h1>
     </header>
-    <div>
-
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <input class="searchBar" type="text">
+                    <button class="searchButton"></button>
+                </div>
+                <div class="row">
+                    <ul class="citiesStored"></ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div>
+                        <h2 class="cityName"></h2>
+                        <h4 class="temperature"></h4>
+                        <h4 class="humidity"></h4>
+                        <h4 class="windSpeed"></h4>
+                        <h4 class="uvIndex"></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fiveDayForecast"></div>
+                </div>
+            </div>
+        </div>
 </body>
 <script src="script.js"></script>
 

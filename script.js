@@ -11,6 +11,7 @@ $(document).ready(function(){
         searchWeather($(this).text()); 
     });
 });
+
 function searchWeather
 function getForcast
 function getUVIndex
