@@ -84,7 +84,7 @@ $(document).ready(function () {
                         var body = $("<div>").addClass("card-body p-2");
                         var column = $("<div>").addClass("col-md-2");
                         var title = $("<h4>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-                        var img = $("<img>").attr("src", "" + data.list[i].weather[0].icon + ".png");
+                        var img = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png");
                         var p1 = $("<p>").addClass("card-text").text("Tempurature: " + data.list[i].main.tempurature_max + " °F");
                         var p2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
 
