@@ -9,4 +9,4 @@ It also linked all relevant pages together and housed the external links such as
 The CSS code enabled the generalized styling of the page. 
 The JS script enabled all functions to work properly and allowed the weather API data to be called and incorporated into the functions. 
 
-*thank you for your patience with the submittance errors and general tardiness of this project
+*thank you for your patience with the general tardiness of this project
