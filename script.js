@@ -58,7 +58,7 @@ $(document).ready(function () {
                 $("#today").append(card);
 
                 getForcast(weatherSearch)
-                getUVIndex(data.coord.lat, data.coord.lon)
+                // getUVIndex(data.coord.lat, data.coord.lon)
             }
         });
     }
@@ -73,10 +73,10 @@ $(document).ready(function () {
     function getForcast(weatherSearch) {
         $.ajax({
             type: "GET",
-            url: "" + weatherSearch + "",
+            url: "http://api.openweathermap.org/data/2.5/forecast?q=" + weatherSearch + "&APPID=2f9e7f26dcfd6bda6f042ab892b64ad8&units=imperial",
             dataType: "json",
             success: function (data) {
-                $("#forecast").html("</>")
+                $("#forecast").html("<h4 class=\"mt3\">Five-Day Forecast:</h4>").append("<div class=\"row\">");
 
                 for (var i = 0; i < data.list.length; i++) {
                     if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
