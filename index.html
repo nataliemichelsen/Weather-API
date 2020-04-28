@@ -9,7 +9,7 @@
     <!-- insert weather API here -->
     <link href="" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Weather Tracker</title>
 </head>
 
 <body>
@@ -20,29 +20,27 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="row">
-                    <input class="searchBar" type="text">
-                    <button class="searchButton"></button>
+                    <input id="weatherSearch" type="text">
+                    <button id="searchButton"></button>
                 </div>
                 <div class="row">
-                    <ul class="citiesStored"></ul>
+                    <ul id="citiesStored"></ul>
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="row">
-                    <div>
-                        <h2 class="cityName"></h2>
-                        <h4 class="temperature"></h4>
-                        <h4 class="humidity"></h4>
-                        <h4 class="windSpeed"></h4>
-                        <h4 class="uvIndex"></h4>
-                    </div>
+                <div id="today" class="row">
+                    <!-- <div>
+                        <h3 id="todayCityName"></h3>
+                        <p id="todayTemperature"></p>
+                        <p id="todayHumidity"></p>
+                        <p id="todayWindSpeed"></p>
+                        <p id="todayUvIndex"></p>
+                    </div> -->
                 </div>
-                <div class="row">
-                    <div class="fiveDayForecast"></div>
-                </div>
+                <div id="forecast" class="row"></div>
             </div>
         </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="script.js"></script>
-
 </html>
