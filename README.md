@@ -7,6 +7,4 @@ In order to create this page, I utilized HTML, CSS, and JS sheets and pushed my 
 The HTML code set the grid layout for the entire page. 
 It also linked all relevant pages together and housed the external links such as bootstrap and the weather API, as well as internal links to the .js and .css files. 
 The CSS code enabled the generalized styling of the page. 
-The JS script enabled all functions to work properly and allowed the weather API data to be called and incorporated into the functions. 
-
-*thank you for your patience with the general tardiness of this project
+The JS script enabled all functions to work properly and allowed the weather API data to be called and incorporated into the functions.
