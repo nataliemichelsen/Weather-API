@@ -30,7 +30,7 @@ $(document).ready(function () {
     function searchWeather(weatherSearch) {
         $.ajax({
             type: "GET",
-            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + weatherSearch + "&APPID=2f9e7f26dcfd6bda6f042ab892b64ad8",
+            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + weatherSearch + "&APPID=2f9e7f26dcfd6bda6f042ab892b64ad8&units=imperial",
             dataType: "json",
             success: function (data) {
                 console.log(data)
@@ -48,7 +48,7 @@ $(document).ready(function () {
                 var windSpeed = $("<p>").addClass("card-text").text("Wind Speed: " + data.list[0].wind.speed + " MPH");
                 console.log(data.list[0].wind.speed)
                 var humidity = $("<p>").addClass("card-text").text("Humidity: " + data.list[0].main.humidity + "%");
-                var temperature = $("<p>").addClass("card-text").text("Temperature: " + data.list[0].main.temperature + " °F");
+                var temperature = $("<p>").addClass("card-text").text("Temperature: " + data.list[0].main.temp + " °F");
                 var cardBody = $("<div>").addClass("card-body");
                 var img = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png");
 
@@ -85,7 +85,7 @@ $(document).ready(function () {
                         var column = $("<div>").addClass("col-md-2");
                         var title = $("<h4>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
                         var img = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png");
-                        var p1 = $("<p>").addClass("card-text").text("Tempurature: " + data.list[i].main.tempurature_max + " °F");
+                        var p1 = $("<p>").addClass("card-text").text("Tempurature: " + data.list[i].main.temp_max + " °F");
                         var p2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
 
                         column.append(card.append(body.append(title, img, p1, p2)));
