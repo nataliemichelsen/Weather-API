@@ -12,7 +12,7 @@
     <title>Weather Tracker</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <h1 class="title">Check the Weather</h1>
     </header>
@@ -20,16 +20,16 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="row">
-                    <input id="weatherSearch" type="text">
-                    <button id="searchButton">Search</button>
+                    <input class="weather-search" id="weatherSearch" type="text">
+                    <button class="search-button" id="searchButton">Search</button>
                 </div>
                 <div class="row">
-                    <ul id="citiesStored"></ul>
+                    <ul class="past-cities" id="citiesStored"></ul>
                 </div>
             </div>
             <div class="col-md-9">
-                <div id="today" class="row"></div>
-                <div id="forecast" class="row"></div>
+                <div class="today" id="today" class="row"></div>
+                <div class="forecast" id="forecast" class="row"></div>
             </div>
         </div>
 </body>
